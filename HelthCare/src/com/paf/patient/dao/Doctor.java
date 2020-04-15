@@ -17,12 +17,6 @@ public class Doctor {
 
 			return con;
 		}
-		
-		public void abc() {
-			System.out.println();
-			//abc
-			
-		}
 
 	}
 
