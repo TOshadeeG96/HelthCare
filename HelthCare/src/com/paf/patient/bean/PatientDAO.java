@@ -1,7 +1,10 @@
-package com.paf.patient.dao;
+package com.paf.patient.bean;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import com.paf.patient.model.Patient;
 
 public class PatientDAO {
 	
@@ -17,6 +20,20 @@ public class PatientDAO {
 		}
 		
 		return con;
+	}
+	
+	public String registerPatient(Patient p) {
+		
+		String output = null;
+		
+		try {
+			Connection con = getConnection();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return output;
+		
 	}
 
 }
