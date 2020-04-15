@@ -1,4 +1,4 @@
-package com.paf.patient.model;
+package com.paf.patient.bean;
 
 public class Patient {
 	

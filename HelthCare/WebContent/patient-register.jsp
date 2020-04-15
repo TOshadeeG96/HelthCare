@@ -17,29 +17,29 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
                 <span>Patient Registration</span>
             </h3>
 
-            <form action="#">
+            <form action="patient-register.jsp">
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">NIC</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control">
+                        <input type="text" name="nic" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">First Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control">
+                        <input type="text" name="firstName" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">Last Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control">
+                        <input type="text" name="lastName" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">Date of Birth</label>
                     <div class="col-sm-10">
-                        <input type="date" class="form-control">
+                        <input type="date" name="dob" class="form-control">
                     </div>
                 </div>
                 <fieldset class="form-group">
@@ -47,13 +47,13 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
                       <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
                       <div class="col-sm-10">
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="geder" value="male" checked>
+                          <input class="form-check-input" type="radio" name="gender" value="male" checked>
                           <label class="form-check-label" for="male">
                             Male
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="geder" value="female">
+                          <input class="form-check-input" type="radio" name="gender" value="female">
                           <label class="form-check-label" for="female">
                             Female
                           </label>
@@ -64,13 +64,13 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control">
+                        <input type="email" name="email"  class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control">
+                        <input type="password" name="password" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
