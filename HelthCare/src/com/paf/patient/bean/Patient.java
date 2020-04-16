@@ -10,6 +10,20 @@ public class Patient {
 	private String email;
 	private String password;
 	
+	public Patient() {
+		
+	}
+	public Patient(String nic, String firstName, String lastName, String dob, String gender, String email,
+			String password) {
+		this.nic = nic;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.dob = dob;
+		this.gender = gender;
+		this.email = email;
+		this.password = password;
+	}
+	
 	public String getNic() {
 		return nic;
 	}
