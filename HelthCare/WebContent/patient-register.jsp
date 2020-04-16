@@ -78,7 +78,16 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
                       <button type="submit" class="btn btn-success">Sign in</button>
                     </div>
                 </div>
-            </form>  
+            </form>
+            
+            <div class="alert alert-success">
+            	<%
+            		if(session.getAttribute("patient_registraton_status") != null) {
+            			out.print(session.getAttribute("patient_registraton_status"));
+            		}
+            	%>
+            </div>
+             
         </fieldset>
     </div>
 </body>

@@ -11,7 +11,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Patient Services</servlet-name>
-		<url-pattern>/patientServices/*</url-pattern>
+		<url-pattern>/patientService/*</url-pattern>
 	</servlet-mapping>
   
   <welcome-file-list>
