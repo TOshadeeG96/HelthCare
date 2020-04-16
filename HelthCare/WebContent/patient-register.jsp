@@ -17,7 +17,7 @@ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
                 <span>Patient Registration</span>
             </h3>
 
-            <form action="patient-register.jsp">
+            <form action="patient_register_process.jsp">
                 <div class="form-group row">
                     <label for="nic" class="col-sm-2 col-form-label">NIC</label>
                     <div class="col-sm-10">
