@@ -54,5 +54,35 @@ public class PatientDAO {
 		return output;
 		
 	}
+	
+	public static String updatePatient(Patient patient) {
+		String status = null;
+		
+		try {
+			Connection con = getConnection();
+			
+			String queary = "update patient_registration set firstName=?, lastName=?, dob=?, gender=?"
+					+ "email=?, patientPassword=? where nic=?";
+			
+			PreparedStatement ps = con.prepareStatement(queary);
+			
+			ps.setString(1, patient.getFirstName());
+			ps.setString(2, patient.getLastName());
+			ps.setString(3, patient.getDob());
+			ps.setString(4, patient.getGender());
+			ps.setString(5, patient.getEmail());
+			ps.setString(6, patient.getPassword());
+			ps.setString(7, patient.getNic());
+			
+			ps.executeUpdate();
+			
+			status = "Patient Update Successfully";
+		} catch (Exception e) {
+			e.printStackTrace();
+			status = "Error in update process";
+		}
+		
+		return status;
+	}
 
 }
