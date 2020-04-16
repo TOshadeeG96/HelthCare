@@ -15,6 +15,8 @@
 	String status = PatientDAO.registerPatient(patient);
 
 	session.setAttribute("patient_registraton_status", status);
+	
+	response.sendRedirect("patient-register.jsp");
 %>
 
 </body>

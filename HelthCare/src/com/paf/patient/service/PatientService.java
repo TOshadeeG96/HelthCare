@@ -10,9 +10,9 @@ import com.google.gson.*;
 
 @Path("/patient")
 public class PatientService {
-
+	
 	@POST
-	@Path("/")
+	@Path("/patient_registration")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces(MediaType.TEXT_PLAIN)
 	public String registerPatient(@FormParam("nic") String nic,
@@ -31,5 +31,7 @@ public class PatientService {
 		
 		return status;
 	}
+	
+	
 	
 }
